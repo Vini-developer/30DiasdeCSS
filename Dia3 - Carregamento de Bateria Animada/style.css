@@ -1,0 +1,120 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.battery {
+    margin-top: 70px;
+    position: relative;
+    width: 40px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.battery-top {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    top: -7px;
+    left: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.battery-filler {
+    position: absolute;
+    width: 35px;
+    height: 55px;
+    border-radius: 5px;
+    top: 2.5px;
+    left: 2.5px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.face img {
+    position: absolute;
+    width: 32px;
+    top: 7px;
+    left: 4px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.face img:nth-child(1) { animation: face1 5s linear infinite;}
+.face img:nth-child(2) { animation: face2 5s linear infinite;}
+.face img:nth-child(3) { animation: face3 5s linear infinite;}
+.face img:nth-child(4) { animation: face4 5s linear infinite;}
+.face img:nth-child(5) { animation: face5 5s linear infinite;}
+
+@keyframes face1{
+    0%, 20% { opacity: 1;}
+    21%, 100% { opacity: 0;}
+}
+@keyframes face2{
+    0%, 20% { opacity: 0;}
+    21%, 40% { opacity: 1;}
+    41%, 100% { opacity: 0;}
+}
+@keyframes face3{
+    0%, 40% { opacity: 0;}
+    41%, 60% { opacity: 1;}
+    61%, 100% { opacity: 0;}
+}
+@keyframes face4{
+    0%, 60% { opacity: 0;}
+    61%, 80% { opacity: 1;}
+    81%, 100% { opacity: 0;}
+}
+@keyframes face5{
+    0%, 80% { opacity: 0;}
+    81%, 100% { opacity: 1;}
+}
+
+.fill-top {
+    position: absolute;
+    background-color: darkred;
+    width: 35px;
+    height: 4px;
+    top: -2px;
+    border-radius: 50%;
+    animation: filling-top 5s linear infinite;
+}
+
+.fill {
+    position: absolute;
+    background-color: red;
+    width: 35px;
+    height: 55px;
+    top: 10px;
+    animation: filling 5s linear infinite;
+}
+
+@keyframes filling {
+    0% { top: 0px; background: #32fc32;}
+    20% { background: #9bed3b;}
+    40% { background: #deea3d;}
+    60% { background: #e89f3f;}
+    80% { background: #e54141;}
+    100% {top: 50px}
+}
+
+@keyframes filling-top {
+    0% { background: #18d118;}
+    20% { background: #83ce21;}
+    40% { background: #cfd32d;}
+    60% { background: #d68a30;}
+    80% { background: #c92f2f;}
+}

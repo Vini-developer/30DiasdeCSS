@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding: 120px 270px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.button div {
+    height: 8px;
+    width: 90%;
+    background-color: lightgray;
+    margin: 5px auto;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.button:hover div:nth-child(1) {
+    background-color: lightsalmon;
+    transform: rotateZ(45deg);
+    transition: 0.5s;
+    position: absolute;
+    top: 15px;
+    left: 0%;
+    margin: 0;
+}
+
+.button:hover div:nth-child(2) {
+    background-color: lightsalmon;
+    transform: rotateZ(45deg);
+    transition: 0.5s;
+    position: absolute;
+    top: 15px;
+    left: 0%;
+    margin: 0;
+}
+
+.button:hover div:nth-child(3) {
+    background-color: lightsalmon;
+    transform: rotateZ(-45deg);
+    transition: 0.5s;
+    position: absolute;
+    top: 15px;
+    left: 0%;
+    margin: 0;
+}
