@@ -24,3 +24,9 @@ Animação feita utilizando imagens para as expressões faciais e elementos html
 Checkboxes customizadas foram utilizadas para criar o efeito de item concluido.
 
 ![](https://media4.giphy.com/media/2hDaHqRdgmPFYIhr2M/giphy.gif)
+
+
+#### Dia 5 - Animação do PacMan.
+Uma animação um pouco mais complexa com svgs e divs para criar as formas dos personagens.
+
+![](https://media1.giphy.com/media/tqKyxVsoNbOyAMgI4T/giphy.gif)

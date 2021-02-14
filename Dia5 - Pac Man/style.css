@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.pac-man {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.top-mouth, .bot-mouth {
+    width: 80px;
+    height: 50px;
+    background-color: yellow;
+}
+
+.top-mouth {
+    position: absolute; 
+    animation: top-mouth 0.6s ease-in-out infinite; 
+    top: -25px;
+    left: -20px;
+}
+.bot-mouth {
+    position: absolute; 
+    animation: bot-mouth 0.6s ease-in-out infinite; 
+    top: 25px;
+    left: -20px;
+}
+
+@keyframes top-mouth { 0% {transform: rotateZ(0deg);} 50% {transform: rotateZ(-45deg);} 0% {transform: rotateZ(0deg);}}
+@keyframes bot-mouth { 0% {transform: rotateZ(0deg);} 50% {transform: rotateZ(45deg);} 0% {transform: rotateZ(0deg);}}
+
+.ghost 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.ghost img {
+    display: inline-block;
+    width: 27.4px;
+    margin: -10px;
+}
+
+.feet {
+    position: absolute;
+    top: 49px;
+    left: 9.5px;
+}
+
+.feet img:nth-child(1), .feet img:nth-child(3) { animation: footA 0.6s linear infinite; }
+.feet img:nth-child(2), .feet img:nth-child(4) { animation: footB 0.6s linear infinite; }
+
+.ghost > img { 
+    width: 60px;
+    margin: 0px;
+}
+
+@keyframes footA { 0% {transform: rotateZ(0deg);} 25% {transform: rotateZ(25deg);} 50% {transform: rotateZ(0deg);} 75% {transform: rotateZ(-25deg);} 100% {transform: rotateZ(0deg);}}
+@keyframes footB { 0% {transform: rotateZ(0deg);} 25% {transform: rotateZ(-25deg);} 50% {transform: rotateZ(0deg);} 75% {transform: rotateZ(25deg);} 100% {transform: rotateZ(0deg);}}
+
+.ghost-mouth {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    animation: ghost-mouth 0.8s linear infinite;
+}
+
+@keyframes ghost-mouth { 0% {transform: scaleY(1);} 50% { transform: scaleY(-1);} 100%{transform: scaleY(1);}}
+
+.ghost-container-afraid .pac-man {
+    transform: scaleX(-1);
+}
+
+.container {
+    width: 300px;
+    height: 90px;
+    overflow: hidden;
+    margin-left: 170px;
+    margin-top: 50px;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    position: relative;
+}
+
+.ghost-container {
+    position: absolute;
+    left: -270px;
+    animation: ghost-container 5s linear infinite;
+    width: 500px;
+    height: 100%;
+}
+@keyframes ghost-container {
+    50%, 100% {left: 300px;}
+}
+
+.ghost-container-afraid {
+    position: absolute;
+    left: 300px;
+    animation: ghost-container-afraid 5s linear infinite;
+    width: 500px;
+    height: 100%;
+}
+@keyframes ghost-container-afraid {
+    0%, 50% {left: 300px;}
+    100% {left: -280px;}
+}
