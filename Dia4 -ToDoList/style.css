@@ -1,0 +1,67 @@
+* {
+    margin: 0 auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.item {
+    width: 100px;
+    position: relative;
+}
+.item input ~ div ~ p {
+    color: black;
+    display: inline-block;
+    margin-top: 5px;
+}
+.item input:checked ~ div ~ p {
+    color: gray;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.container {
+    width: 200px;
+    border: 1px solid lightgreen;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+h4 {
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+.checker{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 2px;
+    margin-left: 5px;
+}
+
+.item input ~ .checker {
+    background-color: white;
+    border: 1px solid lightgreen;
+}
+.item input:checked ~ .checker {
+    background-color: lightgreen;
+}
+
+.item input ~ .checker .line {
+    width: 0px;
+}
+.item input:checked ~ .checker .line {
+    width: 100px;
+    transition: 1s;
+}
+
+.line {
+    height: 2px;
+    background-color: lightgreen;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
