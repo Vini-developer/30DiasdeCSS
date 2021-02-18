@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: purple;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 20px;
+    transition: 1s all ease-in-out;
+}
+
+.line {
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.line:nth-child(odd){
+    transform: skew(60deg, -30deg) scaleY(0.667);
+}
+
+.line:nth-child(even){
+    transform: skew(0deg, -30deg) scaleY(1.333);
+}
+
+.wrapper:hover p {
+    transform: translate(0, -20px);
+    transition: 1s all ease-in-out;
+}
+
+.line:nth-child(1){ left: 49px; }
+.line:nth-child(2){ left: 58px; }
+.line:nth-child(3){ left: 70px; }
+.line:nth-child(4){ left: 80px; }

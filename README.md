@@ -30,3 +30,8 @@ Checkboxes customizadas foram utilizadas para criar o efeito de item concluido.
 Uma animação um pouco mais complexa com svgs e divs para criar as formas dos personagens.
 
 ![](https://media1.giphy.com/media/tqKyxVsoNbOyAMgI4T/giphy.gif)
+
+#### Dia 6 - Efeito de Texto em Perspectiva.
+Efeito de skew e transition ao usar a funação hover.
+
+![](https://media0.giphy.com/media/8MGH6HUSOdXDMUEeQ3/giphy.gif)
