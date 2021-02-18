@@ -39,4 +39,9 @@ Efeito de skew e transition ao usar a funação hover.
 #### Dia 7 - Botão Escondido.
 Botão com efeito de transform revelando o conteúdo quando se passa o mouse.
 
-![](blob:https://giphy.com/e68df157-1390-476a-9843-a5570a1506ce)
+![](https://media3.giphy.com/media/8PIIH6tTHpNLVqVvT7/giphy.gif)
+
+#### Dia 8 - Painel Animado.
+Transições de cores e transformação ao passar o mouse em cima do elemento.
+
+![](https://media0.giphy.com/media/HcSoU1qHc84E6aAElg/giphy.gif)

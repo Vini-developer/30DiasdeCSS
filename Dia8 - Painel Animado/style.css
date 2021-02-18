@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: inherit;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: center;
+    margin: 50px;
+    margin-left: 200px;
+}
+
+.unit {
+    width: 25px;
+    height: 25px;
+    margin: 0.5px;
+    transition: 1s;
+    background-color: darkgray;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.unit:hover{
+    transition: 0.5s;
+    transform: scale(0.6);
+    background-color: white;
+    border: 2px solid darkgray;
+}
