@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    position: relative;
+    left: 200px;
+    top: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+button:hover {
+    border: 1px solid lightgreen;
+    transition: 0.5s;
+}
+
+button:hover .main-bg {
+    transform: translateY(-40px);
+    transition: 0.5s;
+}
+
+button div {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    background-color: lightcoral;
+    color: white;
+    line-height: 20px;
+}
+
+.main-bg {
+    line-height: 40px;
+    background-color: lightgreen;
+    color: lightcoral;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+

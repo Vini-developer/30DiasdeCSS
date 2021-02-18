@@ -35,3 +35,8 @@ Uma animação um pouco mais complexa com svgs e divs para criar as formas dos p
 Efeito de skew e transition ao usar a funação hover.
 
 ![](https://media0.giphy.com/media/8MGH6HUSOdXDMUEeQ3/giphy.gif)
+
+#### Dia 7 - Botão Escondido.
+Botão com efeito de transform revelando o conteúdo quando se passa o mouse.
+
+![](blob:https://giphy.com/e68df157-1390-476a-9843-a5570a1506ce)
