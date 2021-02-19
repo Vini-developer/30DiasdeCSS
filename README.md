@@ -45,3 +45,8 @@ Botão com efeito de transform revelando o conteúdo quando se passa o mouse.
 Transições de cores e transformação ao passar o mouse em cima do elemento.
 
 ![](https://media0.giphy.com/media/HcSoU1qHc84E6aAElg/giphy.gif)
+
+#### Dia 9 - Botão com Efeito.
+Efeito simulando brilho utilizando transitions.
+
+![](https://media3.giphy.com/media/6grroehxqiPMO4sfvZ/giphy.gif)
