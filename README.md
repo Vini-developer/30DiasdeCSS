@@ -50,3 +50,8 @@ Transições de cores e transformação ao passar o mouse em cima do elemento.
 Efeito simulando brilho utilizando transitions.
 
 ![](https://media3.giphy.com/media/6grroehxqiPMO4sfvZ/giphy.gif)
+
+#### Dia 10 - Animação de Carregamento.
+Animação simples utilizando svgs e transform.
+
+![](https://media2.giphy.com/media/95sZXiUkRSctciCym0/giphy.gif)
